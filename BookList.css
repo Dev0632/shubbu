@@ -1,0 +1,32 @@
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* space between the cards */
+    justify-content: center; /* center the cards in the container */
+    padding: 16px;
+  }
+  
+  .card {
+    flex: 1 1 200px; /* Grow to fill available space, but at least 200px wide */
+    max-width: 300px; /* Optional: Limit the maximum width of each card */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .card-image-wrapper {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the card without stretching */
+  }
+  
